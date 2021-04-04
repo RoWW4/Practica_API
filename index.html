@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <title>Practica API</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="javascript.js"></script>
+    <style>
+        body{
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+    </style>
+  </head>
+
+  <body>
+      <h1>PRÁCTICA API DE HTML</h1>
+      <h3>Cargar fichero de vídeo:</h3>
+      <input type="file" name="video" id="video" accept="video/*" onchange="loadFile(event)">
+      <output id="archivo"></output>
+      <div>
+          <button id="reproducir" onclick="document.getElementById('video').play();">Reproducir</button>
+          <button id="pausar" onclick="document.getElementById('video').pause();">Pausar</button>
+          <button id="masvolumen" onclick="document.getElementById('video').volume +=0.1;">Subir Volumen</button>
+          <button id="menosvolumen" onclick="document.getElementById('video').volume -=0.1;">Bajar Volumen</button>
+        </div>
+  </body>
+</html>
