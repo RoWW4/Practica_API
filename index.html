@@ -15,13 +15,13 @@
   <body>
       <h1>PRÁCTICA API DE HTML</h1>
       <h3>Cargar fichero de vídeo:</h3>
-      <input type="file" name="video" id="video" accept="video/*" onchange="loadFile(event)">
-      <output id="archivo"></output>
-      <div>
+      <input type="file" name="files[]" id="files" accept="video/*" onchange="handleFileSelect(event)">
+      <output id="list"></output>
+      <!--<div>
           <button id="reproducir" onclick="document.getElementById('video').play();">Reproducir</button>
           <button id="pausar" onclick="document.getElementById('video').pause();">Pausar</button>
           <button id="masvolumen" onclick="document.getElementById('video').volume +=0.1;">Subir Volumen</button>
           <button id="menosvolumen" onclick="document.getElementById('video').volume -=0.1;">Bajar Volumen</button>
-        </div>
+        </div>-->
   </body>
 </html>
