@@ -10,12 +10,11 @@ function handleFileSelect(evt) {
         }
         
         var reader = new FileReader();
-        reader.onload = (function (theFile) {
+        reader.onload = (function () {
             return function (e) {
                 var div = document.createElement('div');
-                div.innerHTML = ['<video id="video" oncanplay="finCarga()" src="',
+                div.innerHTML = ['<video id="video" width="700" height="400" oncanplay="finCarga()" src="',
                     e.target.result,
-                    '" title="', escape(theFile.name),
                     '"></video>'
                 ].join('');
                 document.getElementById('salida').insertBefore(div, null);
@@ -45,16 +44,8 @@ document.getElementById('seleccionArchivos').addEventListener('change',
     function menosVolumen(){
         video.volume-=0.1;
     }
-       
 
-  /*function cargando(){
-        var mensaje = document.getElementById('mensaje').innerHTML = 'Espere. Cargando vídeo...';
-    } 
-
-    function fin(){
-        mensaje.insertBefore = " ";
-    }*/
-
+    //Funciones para mostrar mensaje mientras carga el vídeo
     function cargando(){
         var mensaje = document.getElementById('mensaje');
         mensaje.innerHTML = "Cargando video... Por favor, espere.";

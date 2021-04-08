@@ -14,6 +14,16 @@
         #reproducir{background-color: green; color: white;}
         #pausar{background-color: red; color: white;}
         #masvolumen, #menosvolumen{background-color: yellow; color: black;}
+        button{
+            height: 40px;
+            width: 80px;
+            border-radius: 100%;
+            font-size: x-small;
+            padding: 0px;
+        }
+        button:hover{
+            border: 3px solid black;
+        }
     </style>
   </head>
   <body>
@@ -26,8 +36,8 @@
       <div>
           <button id="reproducir" onclick="Reproducir();">Reproducir</button>
           <button id="pausar" onclick="Parar();">Pausar</button>
-          <button id="masvolumen" onclick="masVolumen();">Subir Volumen</button>
-          <button id="menosvolumen" onclick="menosVolumen();">Bajar Volumen</button>
+          <button id="masvolumen" onclick="masVolumen();">+ Volumen</button>
+          <button id="menosvolumen" onclick="menosVolumen();">- Volumen</button>
         </div>
   </body>
 </html>
