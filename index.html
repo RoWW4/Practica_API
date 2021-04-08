@@ -19,10 +19,15 @@
   <body>
       <h1>PRÁCTICA API DE HTML</h1>
       <h3>Cargar fichero de vídeo:</h3>
+<<<<<<< HEAD
       <input type="file" id="seleccionArchivo" accept="video/*" onchange="handleFileSelect(event), cargando()">
       <h3 id="mensaje"  style="color: orange;"></h3>
       <output id="salida"></output>
       
+=======
+      <input type="file" name="files[]" id="seleccionArchivo" accept="video/*" onchange="handleFileSelect(event)">
+      <output id="salida"></output>
+>>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
       <div>
           <button id="reproducir" onclick="Reproducir();">Reproducir</button>
           <button id="pausar" onclick="Parar();">Pausar</button>
