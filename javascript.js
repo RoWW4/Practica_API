@@ -57,7 +57,7 @@ document.getElementById('seleccionArchivos').addEventListener('change',
 
     function cargando(){
         var mensaje = document.getElementById('mensaje');
-        mensaje.innerHTML = "Cargando video...Espere";
+        mensaje.innerHTML = "Cargando video... Por favor, espere.";
     }
 
     function finCarga(){
