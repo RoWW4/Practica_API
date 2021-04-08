@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
 //Función para cargar el vídeo y mostrarlo
 function handleFileSelect(evt) {
     var files = evt.target.files; 
@@ -12,20 +8,12 @@ function handleFileSelect(evt) {
             alert("Error. No es un archivo de video");
             break;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
         var reader = new FileReader();
         reader.onload = (function (theFile) {
             return function (e) {
                 var div = document.createElement('div');
-<<<<<<< HEAD
                 div.innerHTML = ['<video id="video" oncanplay="finCarga()" src="',
-=======
-                div.innerHTML = ['<video id="video" src="',
->>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
                     e.target.result,
                     '" title="', escape(theFile.name),
                     '"></video>'
@@ -38,10 +26,7 @@ function handleFileSelect(evt) {
 }
 document.getElementById('seleccionArchivos').addEventListener('change',
     handleFileSelect, false);
-<<<<<<< HEAD
     
-=======
->>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
 
     //Funciones para controlar el vídeo
     function Reproducir(){
@@ -60,7 +45,6 @@ document.getElementById('seleccionArchivos').addEventListener('change',
     function menosVolumen(){
         video.volume-=0.1;
     }
-<<<<<<< HEAD
        
 
   /*function cargando(){
@@ -82,12 +66,4 @@ document.getElementById('seleccionArchivos').addEventListener('change',
     }
 
 
-
-
-
-    
-    
-
-=======
->>>>>>> 331ea955a21d9ede45a60fe406f0a9c40dca579e
 
